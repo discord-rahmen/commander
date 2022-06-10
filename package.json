@@ -1,0 +1,28 @@
+{
+  "name": "@discord-rahmen/commander",
+  "version": "0.0.0",
+  "description": "Commandhandler Package for discord-rahmen Framework",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "framework",
+    "discord.js",
+    "discord-rahmen",
+    "discord-framework",
+    "commandhandler"
+  ],
+  "author": "discord-rahmen",
+  "license": "LGPL-3.0",
+  "dependencies": {
+    "discord.js": "^13.8.0"
+  },
+  "devDependencies": {
+    "@discord-rahmen/discord.js-layer": "^1.0.6",
+    "@discord-rahmen/core": "^1.0.6",
+    "@types/node": "^17.0.41",
+    "typescript": "^4.7.3"
+  }
+}
