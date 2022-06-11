@@ -45,9 +45,9 @@ export interface commandFile {
     privilegedUser: boolean;
     excludeInProduction: boolean;
     cooldown: number;
-    botPermissions: Permissions[];
-    userPermissions: Permissions[];
-    run: (parameter: commandRunner) => Promise<void>;
+    // botPermissions: Permissions[];
+    // userPermissions: Permissions[];
+    run: (parameter: commandRunner) => Promise<any>;
 }
 
 export interface commandOptions {
