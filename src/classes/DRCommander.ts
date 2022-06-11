@@ -16,6 +16,10 @@ export class DRCommander {
     cooldown: Map<string, Map<string, number>>;
 
     constructor(options: DRCommanderOptions) {
+        this.directory = options.directory;
+        this.baseDirectory = options.baseDirectory;
+        this.testing = options.testing;
+        this.privilegedUsers = options.privilegedUsers;
         this.options = options;
     }
 
@@ -30,6 +34,8 @@ export class DRCommander {
     public async init(layer: DRClient) {
         this.layer = layer;
 
+        // TODO: Setting up and using Logger
+
         console.log("Loading all Slashcommands...");
         const commands = await this.loadCommands()
 
@@ -43,7 +49,7 @@ export class DRCommander {
 
     private async deployCommands(commands: any) {
         if (this.testing.bot === this.wrapperClient?.user.id) {
-            await this.layer.setCommand(commands, this.testing.guild.id);
+            await this.layer.setCommand(commands, this.testing.guild);
             return "all Slashcommands in the Testguild! 🥳";
         }
 

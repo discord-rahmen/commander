@@ -1,6 +1,6 @@
 {
   "name": "@discord-rahmen/commander",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "description": "Commandhandler Package for discord-rahmen Framework",
   "main": "dist/index.js",
   "scripts": {

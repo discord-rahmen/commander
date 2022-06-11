@@ -13,6 +13,7 @@ import type {DRCommandOptionType} from "@discord-rahmen/discord.js-layer";
 
 export interface DRCommanderOptions {
     directory: string;
+    baseDirectory: string;
     logger: LoggerOptions;
     testing: TestingOptions;
     privilegedUsers: string[];
@@ -24,7 +25,7 @@ export interface Logger {
 }
 
 export interface Testing {
-    guild: Guild;
+    guild: string;
     bot: string;
 }
 
